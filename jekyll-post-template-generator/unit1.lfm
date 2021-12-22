@@ -386,12 +386,14 @@ object Form1: TForm1
     Top = 88
     Width = 219
     CalendarDisplaySettings = [dsShowHeadings, dsShowDayNames]
-    DateOrder = doNone
+    DefaultToday = True
+    DateOrder = doYMd
+    DateFormat = 'dd-mm-yy'
     ButtonWidth = 30
     NumGlyphs = 1
-    MaxLength = 0
+    MaxLength = 10
     TabOrder = 7
-    Text = 'DateEdit1'
+    Text = '2021.12.22'
   end
   object DateEdit2: TDateEdit
     Left = 237
@@ -399,11 +401,13 @@ object Form1: TForm1
     Top = 88
     Width = 219
     CalendarDisplaySettings = [dsShowHeadings, dsShowDayNames]
-    DateOrder = doNone
+    DefaultToday = True
+    DateOrder = doYMd
+    DateFormat = 'dd-mm-yy'
     ButtonWidth = 30
     NumGlyphs = 1
-    MaxLength = 0
+    MaxLength = 10
     TabOrder = 8
-    Text = 'DateEdit2'
+    Text = '2021.12.22'
   end
 end
