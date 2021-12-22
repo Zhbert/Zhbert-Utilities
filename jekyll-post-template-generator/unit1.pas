@@ -6,7 +6,7 @@ interface
 
 uses
   Classes, SysUtils, Forms, Controls, Graphics, Dialogs, StdCtrls, Calendar,
-  Buttons;
+  Buttons, EditBtn;
 
 type
 
@@ -15,8 +15,8 @@ type
   TForm1 = class(TForm)
     BitBtn1: TBitBtn;
     BitBtn2: TBitBtn;
-    Calendar1: TCalendar;
-    Calendar2: TCalendar;
+    DateEdit1: TDateEdit;
+    DateEdit2: TDateEdit;
     Edit1: TEdit;
     Edit2: TEdit;
     Edit3: TEdit;
