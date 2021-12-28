@@ -4,6 +4,7 @@
 *.dll
 *.so
 *.dylib
+jekyll_post_template_generator
 
 # Test binary, built with `go test -c`
 *.test
