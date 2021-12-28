@@ -9,7 +9,7 @@ object Form1: TForm1
   ClientHeight = 301
   ClientWidth = 468
   LCLVersion = '2.0.6.0'
-  object Edit1: TEdit
+  object postNameEdit: TEdit
     Left = 8
     Height = 30
     Top = 32
@@ -48,7 +48,7 @@ object Form1: TForm1
     Caption = 'Categories:'
     ParentColor = False
   end
-  object Edit2: TEdit
+  object categoriesNameEdit: TEdit
     Left = 8
     Height = 30
     Top = 144
@@ -63,7 +63,7 @@ object Form1: TForm1
     Caption = 'Tags:'
     ParentColor = False
   end
-  object Edit3: TEdit
+  object tagsNameEdit: TEdit
     Left = 237
     Height = 30
     Top = 144
@@ -78,7 +78,7 @@ object Form1: TForm1
     Caption = 'URL name'
     ParentColor = False
   end
-  object Edit4: TEdit
+  object urlNameEdit: TEdit
     Left = 9
     Height = 30
     Top = 200
@@ -238,6 +238,7 @@ object Form1: TForm1
       0000000000000000000000000000000000000000000000000000000000000000
       0000000000000000000000000000000000000000000000000000
     }
+    OnClick = BitBtn1Click
     TabOrder = 5
   end
   object FileButton: TBitBtn
@@ -381,7 +382,7 @@ object Form1: TForm1
     OnClick = FileButtonClick
     TabOrder = 6
   end
-  object DateEdit1: TDateEdit
+  object creationDateEdit: TDateEdit
     Left = 9
     Height = 30
     Top = 88
@@ -396,7 +397,7 @@ object Form1: TForm1
     TabOrder = 7
     Text = '2021.12.22'
   end
-  object DateEdit2: TDateEdit
+  object modificationDateEdit: TDateEdit
     Left = 237
     Height = 30
     Top = 88

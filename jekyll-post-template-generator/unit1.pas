@@ -15,12 +15,12 @@ type
   TForm1 = class(TForm)
     BitBtn1: TBitBtn;
     FileButton: TBitBtn;
-    DateEdit1: TDateEdit;
-    DateEdit2: TDateEdit;
-    Edit1: TEdit;
-    Edit2: TEdit;
-    Edit3: TEdit;
-    Edit4: TEdit;
+    creationDateEdit: TDateEdit;
+    modificationDateEdit: TDateEdit;
+    postNameEdit: TEdit;
+    categoriesNameEdit: TEdit;
+    tagsNameEdit: TEdit;
+    urlNameEdit: TEdit;
     folderNameEdit: TEdit;
     Label1: TLabel;
     Label2: TLabel;
@@ -30,6 +30,7 @@ type
     Label6: TLabel;
     Label7: TLabel;
     SelectDirectoryDialog1: TSelectDirectoryDialog;
+    procedure BitBtn1Click(Sender: TObject);
     procedure FileButtonClick(Sender: TObject);
   private
 
@@ -52,6 +53,20 @@ begin
   begin
     folderNameEdit.Text := SelectDirectoryDialog1.FileName;
   end;
+end;
+
+procedure TForm1.BitBtn1Click(Sender: TObject);
+begin
+  if postNameEdit.Text <> '' then
+    begin
+      if categoriesNameEdit.Text <> '' then
+        begin
+          if tagsNameEdit.Text <> '' then
+            begin
+
+            end else ShowMessage('Fill in the field with tags!');
+        end else ShowMessage('Fill in the field with categories!');
+    end else ShowMessage('Fill in the field with the topic name!');
 end;
 
 end.
