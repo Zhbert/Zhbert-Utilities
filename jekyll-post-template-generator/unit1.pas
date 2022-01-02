@@ -16,6 +16,10 @@ type
     BitBtn1: TBitBtn;
     FileButton: TBitBtn;
     creationDateEdit: TDateEdit;
+    GroupBox1: TGroupBox;
+    pathLabel: TLabel;
+    Memo1: TMemo;
+    previewLabel: TLabel;
     modificationDateEdit: TDateEdit;
     postNameEdit: TEdit;
     categoriesNameEdit: TEdit;
@@ -32,6 +36,7 @@ type
     SelectDirectoryDialog1: TSelectDirectoryDialog;
     procedure BitBtn1Click(Sender: TObject);
     procedure FileButtonClick(Sender: TObject);
+    procedure FormCreate(Sender: TObject);
   private
 
   public
@@ -53,6 +58,12 @@ begin
   begin
     folderNameEdit.Text := SelectDirectoryDialog1.FileName;
   end;
+end;
+
+procedure TForm1.FormCreate(Sender: TObject);
+begin
+  Memo1.Text := '';
+  pathLabel.Caption := '';
 end;
 
 procedure TForm1.BitBtn1Click(Sender: TObject);

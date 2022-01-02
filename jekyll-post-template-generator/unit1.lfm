@@ -1,13 +1,14 @@
 object Form1: TForm1
-  Left = 415
-  Height = 301
-  Top = 212
+  Left = 423
+  Height = 491
+  Top = 142
   Width = 468
   BorderIcons = [biSystemMenu]
   BorderStyle = bsSingle
   Caption = 'Jekyll post template generator'
-  ClientHeight = 301
+  ClientHeight = 491
   ClientWidth = 468
+  OnCreate = FormCreate
   LCLVersion = '2.0.6.0'
   object postNameEdit: TEdit
     Left = 8
@@ -74,8 +75,8 @@ object Form1: TForm1
     Left = 9
     Height = 17
     Top = 176
-    Width = 63
-    Caption = 'URL name'
+    Width = 67
+    Caption = 'URL name:'
     ParentColor = False
   end
   object urlNameEdit: TEdit
@@ -411,6 +412,44 @@ object Form1: TForm1
     MaxLength = 10
     TabOrder = 8
     Text = '2021.12.22'
+  end
+  object GroupBox1: TGroupBox
+    Left = 9
+    Height = 192
+    Top = 288
+    Width = 449
+    Caption = 'Превью'
+    ClientHeight = 172
+    ClientWidth = 447
+    TabOrder = 9
+    object previewLabel: TLabel
+      Left = 8
+      Height = 17
+      Top = 8
+      Width = 68
+      Caption = 'Filename: '
+      Font.Style = [fsBold]
+      ParentColor = False
+      ParentFont = False
+    end
+    object pathLabel: TLabel
+      Left = 80
+      Height = 17
+      Top = 8
+      Width = 66
+      Caption = 'path to file'
+      ParentColor = False
+    end
+    object Memo1: TMemo
+      Left = 8
+      Height = 130
+      Top = 32
+      Width = 432
+      Lines.Strings = (
+        'Memo1'
+      )
+      TabOrder = 0
+    end
   end
   object SelectDirectoryDialog1: TSelectDirectoryDialog
     left = 112
