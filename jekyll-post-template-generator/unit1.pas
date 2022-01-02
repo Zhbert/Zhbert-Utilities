@@ -71,6 +71,7 @@ end;
 procedure TForm1.SaveButtonClick(Sender: TObject);
 begin
   SaveButton.Enabled:=False;
+  Memo1.Lines.SaveToFile(folderNameEdit.Text + '/' + pathLabel.Caption);
 end;
 
 procedure TForm1.BitBtn1Click(Sender: TObject);
