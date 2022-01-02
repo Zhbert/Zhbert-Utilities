@@ -14,6 +14,7 @@ type
 
   TForm1 = class(TForm)
     BitBtn1: TBitBtn;
+    BitBtn2: TBitBtn;
     FileButton: TBitBtn;
     creationDateEdit: TDateEdit;
     GroupBox1: TGroupBox;
