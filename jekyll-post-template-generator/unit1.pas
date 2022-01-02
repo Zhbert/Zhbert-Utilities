@@ -97,6 +97,8 @@ begin
                       SaveButton.Enabled:=True;
                       urlNameEdit.Text := StringReplace(urlNameEdit.Text , ' ','_', [rfReplaceAll, rfIgnoreCase]);
                       urlNameEdit.Text := LowerCase(urlNameEdit.Text);
+                      pathLabel.Caption := StringReplace(creationDateEdit.Text , '.','-', [rfReplaceAll, rfIgnoreCase])
+                                        + '-' + urlNameEdit.Text + '.md';
                     end else ShowMessage('Please enter the url name!');
                 end else ShowMessage('You need to select a directory!');
             end else ShowMessage('Fill in the field with tags!');
