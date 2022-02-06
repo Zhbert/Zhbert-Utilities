@@ -6,3 +6,7 @@ Simple utilities to simplify life
 A simple utility for automatically generating a new post template for Jekyll. 
 
 The target OS is Linux. Tested on Ubuntu 20.04.03 with KDE.
+
+## Downcaser
+
+Simple utility for convert a string into downcase and replace spaces to underlines.
